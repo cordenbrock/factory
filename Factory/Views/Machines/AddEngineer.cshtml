@@ -4,16 +4,13 @@
 
 @model Factory.Models.Machine
 
-<h2>Edit</h2>
+<h2>Add an engineer</h2>
 
-<h4>Edit this machine: @Html.DisplayFor(model => model.MachineName)</h4>
+<h4>Add an engineer to this machine: @Html.DisplayFor(model => model.MachineName)</h4>
 
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.MachineId)
-
-    @Html.Label("Machine")
-    @Html.EditorFor(model => model.MachineName)
 
     @Html.Label("Select engineer")
     @Html.DropDownList("EngineerId")
