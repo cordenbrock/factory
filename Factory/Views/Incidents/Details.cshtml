@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Incident
+
+<h2>Incident Details</h2>
+
+<h4>@Model.Title</h4>
+<p>Machine: -- @Model.Date</p>
+<p>Engineer Report:</p>
+<ul>
+  <li>@Model.Report</li>
+</ul>
+
+<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Edit incident", "Edit", new { id = Model.IncidentId })</p>
+<p>@Html.ActionLink("Delete incident", "Delete", new { id = Model.IncidentId })</p>

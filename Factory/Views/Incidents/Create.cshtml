@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Incident
+
+<h4>Add a new incident</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.Label("Incident Title")
+  @Html.TextBoxFor(model => model.Title)
+
+  @Html.Label("Describe incident")
+  @Html.TextBoxFor(model => model.Report)
+
+  @Html.Label("Date")
+  @Html.TextBoxFor(model => model.Date)
+
+  <input type="submit" value="Add new incident" class="btn btn-default" />
+}
+
+<p>@Html.ActionLink("Show all incidents", "Index")</p>

@@ -1,0 +1,25 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Incident
+
+<h2>Edit Incident</h2>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.IncidentId)
+
+  @Html.Label("Title")
+  @Html.TextBoxFor(model => model.Title)
+
+  @Html.Label("Report")
+  @Html.TextBoxFor(model => model.Report)
+
+  @Html.Label("Incident Date")
+  @Html.TextBoxFor(model => model.Date)
+  
+  <input type="submit" value="Save" />
+}
+
+<p>@Html.ActionLink("Back to list", "Index")</p>
