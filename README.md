@@ -5,11 +5,11 @@
 
 ## _What_ does it do?
 
-* This app allows a user to create a list of engineers and machines and assign relatiionships between which engineer is licensed to repair a given mahcine and vice versa.
+* This app allows a user to create a list of engineers and machines and assign relationships between which engineer is licensed to repair a given machine and vice versa.
 
 ## _Why_ does it do?
 
-* This project was prompted by the wonderful people at [Epicodus](https://www.epicodus.com/) as an exercise in the architectural style of Model-View-Controller development and persisting data with SQL database.
+* This project was prompted by the wonderful people at [Epicodus](https://www.epicodus.com/) as an exercise in the architectural style of Model-View-Controller development and persisting data with an SQL database.
 
 ## Setup Instructions
 
