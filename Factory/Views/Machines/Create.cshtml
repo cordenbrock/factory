@@ -11,9 +11,6 @@
     @Html.LabelFor(model => model.MachineName)
     @Html.TextBoxFor(model => model.MachineName)
 
-    @Html.Label("Select engineer")
-    @Html.DropDownList("EngineerId")
-
     <input type="submit" value="Add new machine" class="btn btn-default" />
 }
 <p>@Html.ActionLink("Show all machines", "Index")</p>

@@ -28,7 +28,7 @@
 
 * To run program:
 
-6. Pass the command ` dotnet run `.
+6. Pass the command ` dotnet run ` in your terminal from the root directory.
 7. From your web browser, go to http://localhost:5000 to use the app.
 
 

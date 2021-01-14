@@ -2,7 +2,29 @@
   Layout = "_Layout";
 }
 
+@using Factory.Models
+
 <h1>Factory Management</h1>
+<hr>
+
+<h3>Engineers</h3>
+<ul>
+  @foreach(Engineer engineer in ViewBag.Engineers)
+  {
+    <li>@engineer.EngineerName</li>
+  }
+</ul>
+<hr>
+
+<h3>Machines</h3>
+<ul>
+  @foreach(Machine machine in ViewBag.Machines)
+  {
+    <li>@machine.MachineName</li>
+  }
+</ul>
+
+<hr>
 <p>@Html.ActionLink("See all engineers", "Index", "Engineers")</p>
 <p>@Html.ActionLink("See all machines", "Index", "Machines")</p>
 <p>@Html.ActionLink("See all incidents", "Index", "Incidents")</p>
